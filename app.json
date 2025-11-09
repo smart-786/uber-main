@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "uber",
+    "slug": "uber",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#2F80ED"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs access to your location to show your current position on the map.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Your location is used to display nearby rides and destinations."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.smart786.uber",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "FOREGROUND_SERVICE",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "server",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "extra": {
+      "EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY": "pk_test_d2hwbGUtc3BhbmllbC03LmNsZXJr... (or use process.env when building)",
+      "DATABASE_URL": "postgresql://neondb_owner:password@.../My Application?sslmode=require",
+      "EXPO_PUBLIC_GEOAPIFY_API_KEY": "1fe53f28769a40f39a4c6ad6803e67f1",
+      "router": {
+        "origin": "https://uber.dev/"
+      },
+      "eas": {
+        "projectId": "3923c8f5-46a2-42a9-9b8b-cbe5ca516555"
+      }
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://uber.com/"
+        }
+      ],
+      "expo-font",
+      "expo-location"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
