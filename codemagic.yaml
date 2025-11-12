@@ -19,4 +19,4 @@ workflows:
     publishing:
       email:
         recipients:
-          sguy83078@gmail.com
+          - sguy83078@gmail.com
