@@ -16,8 +16,10 @@
       "supportsTablet": true,
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "This app needs access to your location to show your current position on the map.",
-        "NSLocationAlwaysAndWhenInUseUsageDescription": "Your location is used to display nearby rides and destinations."
-      }
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Your location is used to display nearby rides and destinations.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "com.smart786.uber"
     },
     "android": {
       "adaptiveIcon": {
@@ -61,6 +63,7 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "owner": "smart786"
   }
 }

@@ -16,7 +16,6 @@ const Rides = () => {
 
   const recentRides = data?.data || [];
 
-
   return (
     <SafeAreaView className="flex-1 bg-white">
       <FlatList
